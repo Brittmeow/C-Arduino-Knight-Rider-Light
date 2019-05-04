@@ -1,0 +1,263 @@
+/*
+  Purpose: Displays knight rider running light on a bar-graph LED display
+  Return: None
+  */
+  
+/*
+Purpose: Declares hardware setup
+*/
+  #define sega 2
+  #define segb 3
+  #define segc 4
+  #define segd 5
+  #define sege 6
+  #define segf 7
+  #define segg 9
+  #define segh 10
+  #define segi 11
+  #define segj 12
+
+/*
+Purpose: Declares functions
+*/
+  void output_a();
+  void output_b();
+  void output_c();
+  void output_d();
+  void output_e();
+  void output_f();
+  void output_g();
+  void output_h();
+  void output_i();
+  void output_j();
+  
+ /*
+ Purpose: defines all the segments as outputs
+ */
+  void setup()
+{
+  pinMode(sega, OUTPUT);
+  pinMode(segb, OUTPUT);
+  pinMode(segc, OUTPUT);
+  pinMode(segd, OUTPUT);
+  pinMode(sege, OUTPUT);
+  pinMode(segf, OUTPUT);
+  pinMode(segg, OUTPUT);
+  pinMode(segh, OUTPUT);
+  pinMode(segi, OUTPUT);
+  pinMode(segj, OUTPUT);
+}
+
+/*
+Purpose: Turns on segment a of the bar-graph LED
+*/
+  void output_a()
+{
+  digitalWrite(sega, LOW);
+  digitalWrite(segb, HIGH);
+  digitalWrite(segc, HIGH);
+  digitalWrite(segd, HIGH);
+  digitalWrite(sege, HIGH);
+  digitalWrite(segf, HIGH);
+  digitalWrite(segg, HIGH);
+  digitalWrite(segh, HIGH);
+  digitalWrite(segi, HIGH);
+  digitalWrite(segj, HIGH);
+}
+
+/*
+Purpose: Turns on segment b of the bar-graph LED
+*/
+  void output_b()
+{
+  digitalWrite(sega, HIGH);
+  digitalWrite(segb, LOW);
+  digitalWrite(segc, HIGH);
+  digitalWrite(segd, HIGH);
+  digitalWrite(sege, HIGH);
+  digitalWrite(segf, HIGH);
+  digitalWrite(segg, HIGH);
+  digitalWrite(segh, HIGH);
+  digitalWrite(segi, HIGH);
+  digitalWrite(segj, HIGH);
+}
+
+/*
+Purpose: Turns on segment c of the bar-graph LED
+*/
+  void output_c()
+{
+  digitalWrite(sega, HIGH);
+  digitalWrite(segb, HIGH);
+  digitalWrite(segc, LOW);
+  digitalWrite(segd, HIGH);
+  digitalWrite(sege, HIGH);
+  digitalWrite(segf, HIGH);
+  digitalWrite(segg, HIGH);
+  digitalWrite(segh, HIGH);
+  digitalWrite(segi, HIGH);
+  digitalWrite(segj, HIGH);
+}
+
+/*
+Purpose: Turns on segment d of the bar-graph LED
+*/
+  void output_d()
+{
+  digitalWrite(sega, HIGH);
+  digitalWrite(segb, HIGH);
+  digitalWrite(segc, HIGH);
+  digitalWrite(segd, LOW);
+  digitalWrite(sege, HIGH);
+  digitalWrite(segf, HIGH);
+  digitalWrite(segg, HIGH);
+  digitalWrite(segh, HIGH);
+  digitalWrite(segi, HIGH);
+  digitalWrite(segj, HIGH);
+}
+
+/*
+Purpose: Turns on segment e of the bar-graph LED
+*/
+  void output_e()
+{
+  digitalWrite(sega, HIGH);
+  digitalWrite(segb, HIGH);
+  digitalWrite(segc, HIGH);
+  digitalWrite(segd, HIGH);
+  digitalWrite(sege, LOW);
+  digitalWrite(segf, HIGH);
+  digitalWrite(segg, HIGH);
+  digitalWrite(segh, HIGH);
+  digitalWrite(segi, HIGH);
+  digitalWrite(segj, HIGH);
+}
+
+/*
+Purpose: Turns on segment f of the bar-graph LED
+*/
+  void output_f()
+{
+  digitalWrite(sega, HIGH);
+  digitalWrite(segb, HIGH);
+  digitalWrite(segc, HIGH);
+  digitalWrite(segd, HIGH);
+  digitalWrite(sege, HIGH);
+  digitalWrite(segf, LOW);
+  digitalWrite(segg, HIGH);
+  digitalWrite(segh, HIGH);
+  digitalWrite(segi, HIGH);
+  digitalWrite(segj, HIGH);
+}
+
+/*
+Purpose: Turns on segment g of the bar-graph LED
+*/
+  void output_g()
+{
+  digitalWrite(sega, HIGH);
+  digitalWrite(segb, HIGH);
+  digitalWrite(segc, HIGH);
+  digitalWrite(segd, HIGH);
+  digitalWrite(sege, HIGH);
+  digitalWrite(segf, HIGH);
+  digitalWrite(segg, LOW);
+  digitalWrite(segh, HIGH);
+  digitalWrite(segi, HIGH);
+  digitalWrite(segj, HIGH);
+}
+
+/*
+Purpose: Turns on segment h of the bar-graph LED
+*/
+  void output_h()
+{
+  digitalWrite(sega, HIGH);
+  digitalWrite(segb, HIGH);
+  digitalWrite(segc, HIGH);
+  digitalWrite(segd, HIGH);
+  digitalWrite(sege, HIGH);
+  digitalWrite(segf, HIGH);
+  digitalWrite(segg, HIGH);
+  digitalWrite(segh, LOW);
+  digitalWrite(segi, HIGH);
+  digitalWrite(segj, HIGH);
+}
+
+/*
+Purpose: Turns on segment i of the bar-graph LED
+*/
+  void output_i()
+{
+  digitalWrite(sega, HIGH);
+  digitalWrite(segb, HIGH);
+  digitalWrite(segc, HIGH);
+  digitalWrite(segd, HIGH);
+  digitalWrite(sege, HIGH);
+  digitalWrite(segf, HIGH);
+  digitalWrite(segg, HIGH);
+  digitalWrite(segh, HIGH);
+  digitalWrite(segi, LOW);
+  digitalWrite(segj, HIGH);
+}
+
+/*
+Purpose: Turns on segment j of the bar-graph LED
+*/
+  void output_j()
+{
+  digitalWrite(sega, HIGH);
+  digitalWrite(segb, HIGH);
+  digitalWrite(segc, HIGH);
+  digitalWrite(segd, HIGH);
+  digitalWrite(sege, HIGH);
+  digitalWrite(segf, HIGH);
+  digitalWrite(segg, HIGH);
+  digitalWrite(segh, HIGH);
+  digitalWrite(segi, HIGH);
+  digitalWrite(segj, LOW);
+}
+
+/*
+Purpose: Displays the knight rider running light
+*/
+  void loop()
+  {
+    output_a();
+    delay(100);
+    output_b();
+    delay(100);
+    output_c();
+    delay(100);
+    output_d();
+    delay(100);
+    output_e();
+    delay(100);
+    output_f();
+    delay(100);
+    output_g();
+    delay(100);
+    output_h();
+    delay(100);
+    output_i();
+    delay(100);
+    output_j();
+    delay(100);
+    output_i();
+    delay(100);
+    output_h();
+    delay(100);
+    output_g();
+    delay(100);
+    output_f();
+    delay(100);
+    output_e();
+    delay(100);
+    output_d();
+    delay(100);
+    output_c();
+    delay(100);
+    output_b();
+    delay(100);
+  }
+
